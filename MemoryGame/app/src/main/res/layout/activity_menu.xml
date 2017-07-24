@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+   >
+    //android:alpha="0.6"
+    //android:background="@drawable/images"
+    <Button
+        android:id="@+id/NewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/NewGame"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="212dp"
+        android:layout_above="@+id/HighScore"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="131dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginBottom="73dp" />
+
+    <Button
+        android:id="@+id/HighScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/HighScore"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="318dp"
+        android:layout_marginBottom="69dp"
+        android:layout_above="@+id/About"
+        android:layout_alignRight="@+id/NewGame"
+        android:layout_alignEnd="@+id/NewGame" />
+
+    <Button
+        android:id="@+id/About"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/About"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="419dp"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/HighScore"
+        android:layout_alignEnd="@+id/HighScore" />
+</RelativeLayout>
